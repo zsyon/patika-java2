@@ -8,10 +8,18 @@ public class kullaniciGirsi {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Kullanıcı Adını Giriniz : ");
-
+    System.out.print("Kullanıcı Adını Giriniz : ");
     kullaniciAdi = input.nextLine();
+
+    System.out.print("Şifreyi Giriniz : ");
     sifre = input.nextInt();
+
+    if(kullaniciAdi.equals("sude") && sifre == 123){
+      System.out.println("Başarıyla Giriş Yaptınız");
+    }
+    else{
+      System.out.println("Hatalı Giriş Yaptınız !!");
+    }
 
 
 
