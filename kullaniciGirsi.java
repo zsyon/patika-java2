@@ -32,10 +32,10 @@ public class kullaniciGirsi {
       sifreSifirlama = inp.nextLine();
 
       if(sifreSifirlama.equals("evet")){
-        System.out.println("Lütfen yeni şifreyi giriniz : ");
+        System.out.print("Lütfen yeni şifreyi giriniz : ");
         int yeniSifre = inp.nextInt();
 
-        if( yeniSifre==sifre ){
+        if( yeniSifre==sifre || yeniSifre==123 ){
           System.out.println("Şifre oluşturulamadı, lütfen başka şifre giriniz.");
         }
         else{
