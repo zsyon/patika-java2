@@ -32,7 +32,16 @@ public class kullaniciGirsi {
       sifreSifirlama = inp.nextLine();
 
       if(sifreSifirlama.equals("evet")){
-        System.out.println("başarılı");
+        System.out.println("Lütfen yeni şifreyi giriniz : ");
+        int yeniSifre = inp.nextInt();
+
+        if( yeniSifre==sifre ){
+          System.out.println("Şifre oluşturulamadı, lütfen başka şifre giriniz.");
+        }
+        else{
+          System.out.println("Şifre oluşturuldu");
+        }
+
       }
     }
 
