@@ -5,7 +5,7 @@ public class artikYilHesaplama {
     int yil;
 
     Scanner input = new Scanner(System.in);
-    System.out.println("Yıl Giriniz : ");
+    System.out.print("Yıl Giriniz : ");
     yil = input.nextInt();
 
     if(yil%400 == 0){
