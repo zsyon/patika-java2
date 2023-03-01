@@ -15,6 +15,16 @@ public class ucakBiletiFiyatıHesaplama {
 
     System.out.print("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ): ");
     yolculukTipi = input.nextInt();
+
+    if(mesafe>0 && yas>0 && yolculukTipi==2 ){
+      
+    }
+    else if(yolculukTipi==1){
+      
+    }
+    else{
+      System.out.println("Hatalı Giriş Yaptınız !");
+    }
     
   }
   
