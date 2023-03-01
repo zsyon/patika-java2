@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class kullaniciGirsi {
   public static void main(String[] args) {
 
-    String kullaniciAdi;
+    String kullaniciAdi, sifreSifirlama;
     int sifre; 
 
     Scanner input = new Scanner(System.in);
@@ -14,11 +14,26 @@ public class kullaniciGirsi {
     System.out.print("Şifreyi Giriniz : ");
     sifre = input.nextInt();
 
-    if(kullaniciAdi.equals("sude") && sifre == 123){
+    if(kullaniciAdi.equals("sude")){
       System.out.println("Başarıyla Giriş Yaptınız");
     }
     else{
       System.out.println("Hatalı Giriş Yaptınız !!");
+    }
+
+    if(sifre == 123){
+      System.out.println("Başarıyla Giriş Yaptınız");
+    }
+    else{
+      System.out.println("Hatalı Giriş Yaptınız !!");
+      System.out.print("Şifrenizi sıfırlamak ister misiniz ?");
+
+      Scanner inp = new Scanner(System.in);
+      sifreSifirlama = inp.nextLine();
+
+      if(sifreSifirlama.equals("evet")){
+        System.out.println("başarılı");
+      }
     }
 
 
