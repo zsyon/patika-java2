@@ -10,13 +10,9 @@ public class hesapMakinesi {
 
     System.out.print("İlk Sayıyı Giriniz : ");
     sayi1 = input.nextInt();
-    System.out.println("İlk Sayı : " + sayi1);
 
     System.out.print("İkinci Sayıyı Giriniz : ");
     sayi2 = input.nextInt();
-
-    System.out.println("İlk Sayı : " + sayi1);
-    System.out.println("İkinci Sayı : " + sayi2);
 
     System.out.println("Yapmak İstediğiniz İşlemi Seçin : ");
     System.out.println("1-Toplama /n 2-Çıkarma /n 3-Çarpma /n 4-Bölme");
@@ -30,15 +26,20 @@ public class hesapMakinesi {
 
     switch (secim) {
       case 1:
-        
+        System.out.println(toplama);
         break;
-    
+      case 2:
+        System.out.println(cikarma);
+        break;
+      case 3:
+        System.out.println(carpma);
+        break;
+      case 4:
+        System.out.println(bolme);
+        break;
       default:
+        System.out.println("Hatalı giriş yaptınız !!");
         break;
     }
-
-    
-
-
   }
 }
